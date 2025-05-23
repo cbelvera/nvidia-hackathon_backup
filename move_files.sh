@@ -1,7 +1,7 @@
 # remove the .git from the AIQToolkit project
 rm -rf AIQToolkit/.git
 
-
+# move the files
 
 cp ../scripts/bootstrap_milvus.sh scripts
 
