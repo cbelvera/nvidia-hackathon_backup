@@ -116,7 +116,7 @@ To run the RAG (Retrieval-Augmented Generation) system—whether you're posing a
 5) Next, execute the `bootstrap_milvus.sh` script as illustrated below.
     ```bash
     source .venv/bin/activate
-    examples/simple_rag/ingestion/bootstrap_milvus.sh
+    scripts/bootstrap_milvus.sh
     ```
 
 6) Run the workflow
