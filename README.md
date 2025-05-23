@@ -59,37 +59,7 @@ uv sync --all-groups --all-extras
 ```
 
 
-
-
-## Script Usage
-### Full automated pipeline for converting the PDFs
-
-To run the entire process of converting the PDFs to .txt files (PDF extraction, cleaning, validation) with one command:
-
-```bash
-python run_pipeline.bat
-```
-
-This will:
-1. Extract text from PDFs (convert_pdfs.py)
-2. Clean blank lines (clean_existing_output.py)
-3. Validate the output files are ready for retrieval (validate_clean_output.py)
-
-### Manual usage for converting the PDFs
-1. Convert PDFs to TXT:
-```bash
-python utilities/convert_pdfs.py
-```
-2. Clean .txt outputs:
-```bash
-python utilities/clean_existing_output.py
-```
-3. Validate cleaned outputs:
-```bash
-python utilities/validate_clean_output.py
-```   
-
-### RAG pipeline
+## RAG pipeline
 
 To run the RAG (Retrieval-Augmented Generation) system—whether you're posing a query, running an evaluation, or modifying the data ingestion files—follow the following instructions. This instructions assume that you are already in the AIQToolkit folder.
 
@@ -133,6 +103,36 @@ The results of the evaluation will appear in a temporal folder inside the AIQToo
 
 ---
 
+
+## Pipeline for converting the PDFs to .txt files
+### Full automated pipeline for converting the PDFs
+
+To run the entire process of converting the PDFs to .txt files (PDF extraction, cleaning, validation) with one command:
+
+```bash
+python run_pipeline.bat
+```
+
+This will:
+1. Extract text from PDFs (convert_pdfs.py)
+2. Clean blank lines (clean_existing_output.py)
+3. Validate the output files are ready for retrieval (validate_clean_output.py)
+
+### Manual usage for converting the PDFs
+1. Convert PDFs to TXT:
+```bash
+python utilities/convert_pdfs.py
+```
+2. Clean .txt outputs:
+```bash
+python utilities/clean_existing_output.py
+```
+3. Validate cleaned outputs:
+```bash
+python utilities/validate_clean_output.py
+```   
+
+
 ## OCR (Scanned PDFs)
 
 This project uses [Tesseract](https://github.com/tesseract-ocr/tesseract) and `pdf2image` to handle scanned PDFs.
@@ -151,8 +151,7 @@ This project uses [Tesseract](https://github.com/tesseract-ocr/tesseract) and `p
 
 This project properly ignores:
 
-- Virtual environments (`env/`, `env312/`)
-- Cache files (`__pycache__/`, `*.pyc`, `*.log`)
+- AIQToolkit
 
 ---
 
