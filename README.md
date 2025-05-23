@@ -23,6 +23,14 @@ NVIDIA_Hackathon/
 
 ## Prerrequisits
 
+0) Before you begin using AgentIQ, ensure that you meet the following software prerequisites.
+
+- Install Git
+
+- Install Git Large File Storage (LFS)
+
+- Install uv
+
 1) Clone the AIQToolkit repository. To do so, open the terminal inside the nvidia-hackathon project and run
 
 ```bash
@@ -85,11 +93,10 @@ To run the RAG (Retrieval-Augmented Generation) system—whether you're posing a
 
 5) Next, execute the `bootstrap_milvus.sh` script as illustrated below.
     ```bash
-    source .venv/bin/activate
     scripts/bootstrap_milvus.sh
     ```
 
-6) Run the workflow
+6) Run the workflow.
     ```bash
     aiq run --config_file examples/simple_rag/configs/milvus_rag_config.yml --input "¿Qué criterios utiliza el Tribunal Supremo y las Audiencias Provinciales para diferenciar entre un discurso amparado por la libertad de expresión y un discurso que constituye delito de odio según el artículo 510 del Código Penal?"
     ```
