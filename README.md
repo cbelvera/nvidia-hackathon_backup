@@ -76,7 +76,7 @@ To run the RAG (Retrieval-Augmented Generation) system—whether you're posing a
     uv pip install -e examples/simple_rag
     ```
 
-2) Move the new scripts inside the simple_rag example project
+2) Move the new scripts inside the simple_rag example project. This file also removes the .git from the AIQToolkit folder.
     ```bash
     ../move_files.sh
     ```
