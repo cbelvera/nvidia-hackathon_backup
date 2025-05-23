@@ -1,6 +1,6 @@
-# NVIDIA Hackathon – PDF Retriever Project
+# NVIDIA Hackathon – Agent for Legal Precedents in Hate Crime Cases (Spain)
 
-This project converts PDF documents to plain text for use with **NeMo Retriever**, using NVIDIA's **AgentIQ** toolkit, OCR support with Tesseract, and automated cleaning pipelines. The processed texts are then indexed and retrieved within a Retrieval-Augmented Generation (RAG) system that powers a legal assistant capable of answering questions grounded in real legal case documents.
+This project converts PDF documents to plain text for use with the NVIDIA's **AgentIQ** toolkit, OCR support with Tesseract, and automated cleaning pipelines. The processed texts are then indexed and retrieved within a Retrieval-Augmented Generation (RAG) system that powers a legal assistant capable of answering questions grounded in real legal case documents.
 
 ---
 
